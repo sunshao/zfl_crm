@@ -1,0 +1,129 @@
+extends layout
+block content
+  div.amz-banner
+    div(data-am-scrollspy="{animation: 'scale-up', repeat: false}").amz-container
+      h1(style={color:'#fff'}) 关于我们
+  div#timeline
+    ul#dates
+      li
+        a(href='#201205') 2012年5月
+      li
+        a(href='#201303') 2013年3月
+      li
+        a(href='#201304') 2013年4月
+      li
+        a(href='#201306') 2013年6月
+      li
+        a(href='#201309') 2013年9月
+      li
+        a(href='#201311') 2013年11月
+      li
+        a(href='#201312') 2013年12月
+      li
+        a(href='#201401') 2014年1月
+      li
+        a(href='#201404') 2014年4月
+      li
+        a(href='#201405') 2014年5月
+      li
+        a(href='#201407') 2014年7月
+      li
+        a(href='#201501') 2015年1月
+      li
+        a(href='#201504') 2015年4月
+    ul#issues
+      li#201205
+        h1 2012年5月
+        p 筹备成立中国房产联盟。
+      li#201303
+        h1 2013年3月
+        p 中国房产联盟在香港正式注册。
+      li#201304
+        h1 2013年4月
+        p 中国房产联盟商学院正式运营。
+      li#201306
+        h1 2013年6月
+        p 中国房产联盟商学院首次论坛“信息时代的房产经纪发展趋势论坛”在济宁开幕。
+      li#201309
+        h1 2013年9月
+        p 中国房产联盟商学院在济南面向全省举办第三期论坛活动“房产中介系统化建设及业绩倍增”研讨会。
+      li#201311
+        h1 2013年11月
+        p 中房产联盟商学院自主研发课程“房产经纪人素质特训营”连开三期。
+      li#201312
+        h1 2013年12月
+        p 中国房产联盟“2013房产经纪行业年会”隆重召开！
+      li#201401
+        h1 2014年1月
+        p 中国房产联盟商学院在京举办房产经纪高管班《赢战2014》!
+      li#201404
+        h1 2014年4月
+        p 中国房产联盟秘书长和中房联商学院院长参加了中国台湾房产中介协会主办的“2014年不动产全球高峰会”。
+      li#201405
+        h1 2014年5月29日
+        p 举办首届复合型独立经纪人培训。
+      li#201407
+        h1 2014年7至11月
+        p 中国房产联盟商学院全国巡场论坛在济南、青岛、淄博、潍坊举行。
+      li#201501
+        h1 2015年1月
+        p 中国房产联盟商学院派代表参加首届房地产经纪行业峰会——海南博鳌论坛。
+      li#201504
+        h1 2015年4月
+        p 中国房产联盟商学院全国巡场论坛在潍坊举办“金牌店长运营之路”公开课。
+  section.cnea-main-wantu
+    div.am-g.am-g-fixed
+      div.col-md-3.am-u-md-3
+        div(style={margin: '0px'})#amz-offcanvas.am-offcanvas.doc-offcanvas
+          section(style={'max-height': '145px'}).am-offcanvas-bar
+            ul.am-nav
+              li.am-active
+                a(href='/wantu') 求贤若渴
+              li
+                a(href='#') 联系我们
+      .col-md-9.am-u-md-9.doc-content
+        h1 中国房产联盟商学院求贤如渴
+        hr
+        p 加入我们，出任CEO，赢娶白富美(高富帅)，走上人生的巅峰.
+        p
+          strong 1.商务专员（20人）
+        p
+          strong 要求:
+        ul
+          li 性别不限(男或女)；
+          li 专业不限，营销、管理类专业为佳；
+          li 具备思维活跃、有积极进取的精神及接受挑战的性格；
+          li 为人诚实、正直，性格开朗、责任心强，擅长与人沟通;
+          li 有一定的组织协调能力，能承担和突破工作压力；
+        p
+          strong 薪(给)酬(多)待(少)遇(钱)
+        p （底薪+绩效工资）1800+高提成+绩效奖金+补贴+五险+福利待遇
+        p
+          strong 2.客服专员（10人）
+        p
+          strong 要求:
+        ul
+          li 性别不限(男或女)；
+          li 熟悉基本电脑操作；
+          li 善于与人沟通、交流，语言表达能力强；
+          li 有三年以上客服经验者优先;
+          li 有相关电话销售工作经验者优先；
+        p
+          strong 薪(给)酬(多)待(少)遇(钱)
+        p （底薪+绩效工资）1800+提成+绩效奖金+五险+福利待遇
+        p
+          strong 联系我们
+        p 简历发送至&nbsp;
+          a(href='mailto:zfl_ella@163.com') zfl_ella@163.com
+          | ，标题注明 应聘的职位
+        p
+          strong 咨询电话
+        p 18816159151(吴女士)
+  script.
+    $(function () {
+      $().timelinr({
+        autoPlay: 'true',
+        autoPlayDirection: 'forward',
+        startAt: 4
+      })
+    });

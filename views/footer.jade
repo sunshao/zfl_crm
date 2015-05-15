@@ -1,0 +1,39 @@
+
+div(data-am-widget='gotop',style={right:'160px',width:'48px'}).am-gotop.am-gotop-fixed
+  a(href='#top',title='回到顶部').am-icon-btn.am-icon-arrow-up
+footer.cnea-footer
+  div.am-g.am-g-fixed
+    div.col-md-4.col-md-push-8.am-u-md-4.am-u-md-push-8
+      ul.cnea-social
+        li
+          a(href='tencent://message/?uin=2101145298&Site=fdfdf&Menu=yes',data-am-popover="{content: '中国房产联盟商学院 QQ：2101145298'}",target='_blank',title='中国房产联盟商学院 QQ')
+            span.am-icon-qq
+        li
+          a(href='javascript: void(0)',data-am-popover="{content: '中国房产联盟商学院 电话：2101145298'}",target='_blank',title='中国房产联盟商学院 电话')
+            span.am-icon-phone
+        li
+          a(href='http://weibo.com/cneasxy',title='中国房产联盟商学院 微博',target='_blank')
+            span.am-icon-weibo
+        li
+          a(href='#am-wechat',title='中国房产联盟商学院微信',data-am-modal)
+            span.am-icon-wechat
+    div.col-md-8.col-md-pull-4.am-u-md-8.am-u-md-pull-4
+      h2.cnea-fd
+        a(href='http://cnea.cc',target='_blank') 中国房产联盟
+      ul.cnea-links
+        li
+          a(href='/wantu').am-icon-heart  诚聘英才
+          | &nbsp;|&nbsp;
+          a(href='#').am-icon-heart   联系我们
+      p.cnea-cp © 2015 中国房产联盟
+  div(tabindex='-1')#am-wechat.am-modal.am-modal-no-btn
+    div.am-modal-dialog
+      div.am-modal-hd
+        a(data-am-modal-close,href='').am-close.am-close-spin &times;
+      div.am-modal-bd
+        img(alt='中国房产联盟 微信',src='/images/weichatcodes.jpg')
+        br
+        p 在微信上关注我们
+script(src='/amaze/js/jquery.timelinr-0.9.53.js')
+script.
+  $.AMUI.progress.done();

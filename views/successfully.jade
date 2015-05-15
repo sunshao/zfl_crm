@@ -1,0 +1,22 @@
+extends layout
+block content
+  .am-g
+    .am-u-lg-3
+    .am-u-lg-4.am-u-lg-centered
+      br
+      h1=result
+      h2 在
+        i.red 3
+        |秒后跳转回首页。
+    .am-u-lg-5
+  script(type="text/javascript").
+      $(function(){
+        var i=3;
+        setInterval(function () {
+          if(i--<=0)
+            window.location.href="/";
+          else{
+            $("h2 i").text(i);
+          }
+        }, 1000);
+      });

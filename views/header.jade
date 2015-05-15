@@ -1,0 +1,27 @@
+header.am-topbar.am-topbar-fixed-top
+  div.am-container
+    h1.am-topbar-brand
+      a(href='http://cnea.cc',target='_blank') 中国房产联盟
+    button(data-am-collapse="{target: '#collapse-head'}").am-topbar-btn.am-topbar-toggle.am-btn.am-btn-sm.am-btn-secondary.am-show-sm-only
+      span.am-sr-only 导航切换
+      span.am-icon-bars
+    div#collapse-head.am-collapse.am-topbar-collapse
+      ui#headmenu.am-nav.am-nav-pills.am-topbar-nav
+        li(class={"am-active":!!indexc})
+          a(href='/') 商学院
+        li(class={"am-active":!!coursec})
+          a(href='/course') 课程体系
+        li
+          a(href='#') 讲师团队
+        li
+          a(href='#') 精彩瞬间
+        li
+          a(href='#') 家人风采
+        li
+          a(href='#') 行业动态
+        li
+          a(href='#') 建议反馈
+      div.am-topbar-right
+        button.am-btn.am-btn-primary.am-topbar-btn.am-btn-sm
+          span.am-icon-user
+          |登录
